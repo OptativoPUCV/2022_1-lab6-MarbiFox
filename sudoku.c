@@ -45,7 +45,7 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
   //crear Vector.
-  int i, j, k;
+  //int i, j, k;
   int * vec;
   vec = (int *) calloc (10, sizeof(int));
 
