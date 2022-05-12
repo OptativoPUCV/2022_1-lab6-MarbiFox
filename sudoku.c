@@ -45,6 +45,7 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
   //crear Vector.
+  int k;
   int * vec;
   
   //Recorrer Filas y Columnas.
