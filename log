@@ -187,3 +187,9 @@ sudoku.c:49:9: error: variable ‘vec’ set but not used [-Werror=unused-but-se
 cc1: all warnings being treated as errors
 Compilation failed
 87a8339
+Thu May 12 16:01:25 UTC 2022: 
+ sudoku.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  2|4
+total_score: 15/70
+98455a5
