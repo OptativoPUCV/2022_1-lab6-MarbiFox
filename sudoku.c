@@ -52,7 +52,7 @@ int is_valid(Node* n){
   for (i = 0; i <= 9; i++) {
     vec = (int *) calloc (10, sizeof(int));
     for (j = 0; j <= 9; j++) {
-      printf("%d", n->sudo[i][j]);
+      printf("%d ", n->sudo[i][j]);
       if (n->sudo[i][j] != 0){
         k = n->sudo[i][j];
         //Revisar si está en el arreglo
@@ -76,7 +76,7 @@ List* get_adj_nodes(Node* n){
     for (i = 0; i < 9; i++) {
       for (j = 0; j < 9; j++) {
         if (n->sudo[i][j] <= 0) {
-          for(k = 1; k <= 9; k++) { // Probar los valores.
+          for(k = 1; k < 10; k++) { // Probar los valores.
             n->sudo[i][j] = k; //Asignar Valores.
             if(is_valid(n)) {
               Node * adj = copy(n);
