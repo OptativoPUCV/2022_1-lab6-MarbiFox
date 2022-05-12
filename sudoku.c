@@ -45,17 +45,17 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
   //crear Vector.
-  int k = 0;
+  int i, j, k;
   int * vec;
   
   //Recorrer Filas y Columnas.
-  for (int i = 0; i <= 9; i++) {
+  for (i = 0; i <= 9; i++) {
     vec = (int *) calloc (10, sizeof(int));
-    for (int j = 0; j <= 9; j++) {
+    for (j = 0; j <= 9; j++) {
       if (n->sudo[i][j] != 0){
         k = n->sudo[i][j];
         //Revisar si está en el arreglo
-        for (int k = 0; k <= 9; k++) {
+        for (k = 0; k <= 9; k++) {
           if (vec[k-1] == k) return 1;
           vec[k-1] = k;
         }
