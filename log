@@ -296,3 +296,14 @@ sudoku.c:49:9: error: variable ‘vec’ set but not used [-Werror=unused-but-se
 cc1: all warnings being treated as errors
 Compilation failed
 eb33962
+Thu May 12 16:14:41 UTC 2022: 
+ sudoku.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:49:9: error: unused variable ‘vec’ [-Werror=unused-variable]
+   int * vec = (int *) calloc (10, sizeof(int));
+         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+5b0a1b9
