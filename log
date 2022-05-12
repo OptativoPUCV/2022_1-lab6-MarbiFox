@@ -123,3 +123,15 @@ Thu May 12 15:41:30 UTC 2022:
  tests:  0|5
 total_score: 0/70
 3671842
+Thu May 12 15:43:19 UTC 2022: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+test.c: In function ‘is_valid’:
+sudoku.c:50:3: error: ‘i’ is used uninitialized in this function [-Werror=uninitialized]
+   printf("%d", n->sudo[i][j]);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudoku.c:50:3: error: ‘j’ is used uninitialized in this function [-Werror=uninitialized]
+cc1: all warnings being treated as errors
+Compilation failed
+90b8abf
