@@ -307,3 +307,9 @@ sudoku.c:49:9: error: unused variable ‘vec’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 5b0a1b9
+Thu May 12 16:14:47 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|3
+total_score: 25/70
+60ece33
