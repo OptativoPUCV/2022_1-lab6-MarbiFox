@@ -56,8 +56,8 @@ int is_valid(Node* n){
         k = n->sudo[i][j];
         //Revisar si está en el arreglo
         for (k = 0; k <= 9; k++) {
-          if (vec[k-1] == k) return 1;
-          vec[k-1] = k;
+          if (vec[k-1] == 1) return 1;
+          vec[k-1] = 1;
         }
       }
     }
