@@ -47,11 +47,12 @@ int is_valid(Node* n){
   //crear Vector.
   int i, j, k;
   int * vec;
-  printf("%d", n->sudo[i][j]);
+  
   //Recorrer Filas y Columnas.
   for (i = 0; i <= 9; i++) {
     vec = (int *) calloc (10, sizeof(int));
     for (j = 0; j <= 9; j++) {
+      printf("%d", n->sudo[i][j]);
       if (n->sudo[i][j] != 0){
         k = n->sudo[i][j];
         //Revisar si está en el arreglo

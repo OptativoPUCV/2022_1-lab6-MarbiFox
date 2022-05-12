@@ -135,3 +135,9 @@ sudoku.c:50:3: error: ‘j’ is used uninitialized in this function [-Werror=un
 cc1: all warnings being treated as errors
 Compilation failed
 90b8abf
+Thu May 12 15:43:34 UTC 2022: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+ee51b3e
