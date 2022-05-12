@@ -40,3 +40,24 @@ Thu May 12 15:20:08 UTC 2022:
  tests:  0|5
 total_score: 0/70
 28310c1
+Thu May 12 15:26:53 UTC 2022: 
+ sudoku.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:49:3: error: expected identifier or ‘(’ before ‘for’
+   for (int i = 0; i <= 9; i++) {
+   ^~~
+sudoku.c:49:19: error: ‘i’ undeclared (first use in this function)
+   for (int i = 0; i <= 9; i++) {
+                   ^
+sudoku.c:49:19: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:49:30: error: expected ‘;’ before ‘)’ token
+   for (int i = 0; i <= 9; i++) {
+                              ^
+sudoku.c:49:30: error: expected statement before ‘)’ token
+sudoku.c:52:5: error: expected expression before ‘}’ token
+     }
+     ^
+Compilation failed
+ce2ea4d
