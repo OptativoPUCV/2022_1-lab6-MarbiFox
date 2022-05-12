@@ -59,7 +59,7 @@ List* get_adj_nodes(Node* n){
         if (n->sudo[i][j] <= 0) {
           for(k = 1; k <= 9; k++) { // Probar los valores.
             n->sudo[i][j] = k; //Asignar Valores.
-            if(is_value(n)) {
+            if(is_valid(n)) {
               Node * adj = copy(n);
               pushBack(list, adj);
             }
