@@ -59,8 +59,8 @@ int is_valid(Node* n){
         //Revisar si está en el arreglo
         for (i = 0; i <= 9; i++) {
           //printf("%d", n->sudo[i][j]);
-          if (vec[k] == 1) return 1;
-          vec[k] = 1;
+          if (vec[i] == 1) return 1;
+          vec[i] = 1;
           }
         }
         //printf("%d ",n->sudo[i][j]);

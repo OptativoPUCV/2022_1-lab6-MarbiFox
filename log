@@ -268,3 +268,14 @@ sudoku.c:48:7: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8798433
+Thu May 12 16:14:01 UTC 2022: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:48:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   int i, k;
+       ^
+cc1: all warnings being treated as errors
+Compilation failed
+5bb3932
