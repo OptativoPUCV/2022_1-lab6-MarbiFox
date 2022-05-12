@@ -153,3 +153,26 @@ Thu May 12 15:47:05 UTC 2022:
  tests:  2|4
 total_score: 15/70
 e11e963
+Thu May 12 16:00:59 UTC 2022: 
+ sudoku.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:52:7: error: redeclaration of ‘k’ with no linkage
+   int k=4 , p;
+       ^
+sudoku.c:48:13: note: previous declaration of ‘k’ was here
+   int i, j, k;
+             ^
+sudoku.c:49:9: error: variable ‘vec’ set but not used [-Werror=unused-but-set-variable]
+   int * vec;
+         ^~~
+sudoku.c:48:10: error: unused variable ‘j’ [-Werror=unused-variable]
+   int i, j, k;
+          ^
+sudoku.c:48:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   int i, j, k;
+       ^
+cc1: all warnings being treated as errors
+Compilation failed
+d8bbf63
