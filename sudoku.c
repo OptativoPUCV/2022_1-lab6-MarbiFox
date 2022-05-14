@@ -58,7 +58,9 @@ int is_valid(Node* n){
       if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
         vec[n->sudo[i][j]] = 1;
       }
-      else return 0;
+      if (vec[n->sudo[i][j]] != 0) {
+        return 0;
+      }
     }
   }
   
