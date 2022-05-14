@@ -444,3 +444,20 @@ Sat May 14 02:58:07 UTC 2022:
  tests:  1|4
 total_score: 10/70
 46b312c
+Sat May 14 02:58:40 UTC 2022: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c:83:5: error: expected identifier or ‘(’ before ‘return’
+     return 1;
+     ^~~~~~
+sudoku.c:84:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:97:16: error: implicit declaration of function ‘is_valid’ [-Werror=implicit-function-declaration]
+             if(is_valid(n)) {
+                ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0697240

@@ -42,7 +42,7 @@ void print_node(Node* n){
     }
     printf("\n");
 }
-
+/*
 int is_valid(Node* n){
   //crear Vector.
   //int i, j, k;
@@ -61,7 +61,7 @@ int is_valid(Node* n){
     }
   }
   
-  
+  */
   
   /*
   //Recorrer Filas y Columnas.
