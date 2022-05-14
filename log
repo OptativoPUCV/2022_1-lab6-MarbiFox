@@ -410,3 +410,13 @@ Sat May 14 02:42:18 UTC 2022:
  tests:  4|3
 total_score: 30/70
 537d231
+Sat May 14 02:42:32 UTC 2022: 
+ sudoku.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘createNode’:
+sudoku.c:12:4: error: ‘Node {aka struct <anonymous>}’ has no member named ‘visited’
+   n->visited = 0;
+    ^~
+Compilation failed
+e6f238b
