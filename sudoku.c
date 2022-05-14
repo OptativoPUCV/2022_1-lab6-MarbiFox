@@ -5,6 +5,7 @@
 
 typedef struct{
    int sudo[9][9];
+   int visited = 0; 
 }Node;
 
 Node* createNode(){
@@ -114,6 +115,12 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
+  Stack * S = createStack();
+  push(S, initial);
+  while (size(S) != 0) {
+    Node * initial = top(S); pop(S);
+    if (initial)
+  }
   return NULL;
 }
 
