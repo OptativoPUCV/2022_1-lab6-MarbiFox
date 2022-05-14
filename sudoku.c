@@ -42,10 +42,11 @@ void print_node(Node* n){
     }
     printf("\n");
 }
-/*
+
 int is_valid(Node* n){
   //crear Vector.
   //int i, j, k;
+  /*
   int * vec = (int *) calloc (10, sizeof(int));
   
   int k, p;
