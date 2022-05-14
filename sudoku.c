@@ -9,7 +9,6 @@ typedef struct{
 
 Node* createNode(){
   Node* n=(Node*) malloc(sizeof(Node));
-  n->visited = 0;
   return n;
 }
 

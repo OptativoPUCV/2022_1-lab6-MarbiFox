@@ -420,3 +420,9 @@ sudoku.c:12:4: error: ‘Node {aka struct <anonymous>}’ has no member named �
     ^~
 Compilation failed
 e6f238b
+Sat May 14 02:42:42 UTC 2022: 
+ sudoku.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  4|3
+total_score: 30/70
+c7f6d3e
