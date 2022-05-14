@@ -46,9 +46,10 @@ void print_node(Node* n){
 int is_valid(Node* n){
   //crear Vector.
   int * vec = (int *) calloc (10, sizeof(int));
-  //return 1;
+  //Variables para recorrer.
   int i, j, k, p;
-  
+
+  //Revisar SubMatrices.
   for (k = 0; k < 9; k++) {
     vec = (int *) calloc (10, sizeof(int));
     for (p = 0; p < 9; p++) {
@@ -61,12 +62,10 @@ int is_valid(Node* n){
       if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
         vec[n->sudo[i][j]] = 1;
       }
-      
     }
   }
   
   //Recorrer Filas y Columnas.
-  
   for (i = 0; i < 9; i++) {
     vec = (int *) calloc (10, sizeof(int));
     for (j = 0; j < 9; j++) {
@@ -77,7 +76,6 @@ int is_valid(Node* n){
       if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
         vec[n->sudo[i][j]] = 1;
       }
-      
     }
   }
   for (j = 0; j < 9; j++) {
@@ -90,7 +88,6 @@ int is_valid(Node* n){
       if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
         vec[n->sudo[i][j]] = 1;
       }
-      
     }
   }
   
@@ -138,7 +135,7 @@ Node* DFS(Node* initial, int* cont){
   while (get_size(S) > 0) {
     Node * n = top(S); 
     pop(S);
-    if (n == NULL) return NULL;
+    //if (n == NULL) return NULL;
     if (is_final(n)) return n;
     List * adj = get_adj_nodes(n);
     Node * aux = first(adj);
