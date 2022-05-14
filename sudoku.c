@@ -5,11 +5,12 @@
 
 typedef struct{
    int sudo[9][9];
-   int visited = 0; 
+   int visited; 
 }Node;
 
 Node* createNode(){
   Node* n=(Node*) malloc(sizeof(Node));
+  n->visited = 0;
   return n;
 }
 
@@ -117,9 +118,17 @@ int is_final(Node* n){
 Node* DFS(Node* initial, int* cont){
   Stack * S = createStack();
   push(S, initial);
-  while (size(S) != 0) {
+  while (get_size(S) != 0) {
     Node * initial = top(S); pop(S);
-    if (initial)
+    if (initial->visited == 1) continue;
+    //Visitar Nodo.
+    initial->visited = 1;
+    List * adj = get_adj_nodes(initial);
+    Node * aux = first(adj);
+    while (aux) {
+      push(S, aux);
+      aux = next(adj);
+    }
   }
   return NULL;
 }

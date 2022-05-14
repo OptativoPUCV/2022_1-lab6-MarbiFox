@@ -344,3 +344,13 @@ sudoku.c:123:3: error: expected expression before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 db5d55d
+Sat May 14 02:32:06 UTC 2022: 
+ sudoku.c | 15 ++++++++++++---
+ 1 file changed, 12 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:60:7: error: expected expression before ‘}’ token
+       }
+       ^
+Compilation failed
+6232c10
