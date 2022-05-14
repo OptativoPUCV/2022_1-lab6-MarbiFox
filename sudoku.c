@@ -77,6 +77,19 @@ int is_valid(Node* n){
       }
     }
   }
+  //Recorrer Filas y Columnas.
+  for (j = 0; j < 9; j++) {
+    vec = (int *) calloc (10, sizeof(int));
+    for (i = 0; i < 9; i++) {
+      //Verificar si el número está en la subMatriz.
+      if (vec[n->sudo[i][j]] != 0) {
+        return 0;
+      }
+      if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
+        vec[n->sudo[i][j]] = 1;
+      }
+    }
+  }
   
   return 1;
 }
