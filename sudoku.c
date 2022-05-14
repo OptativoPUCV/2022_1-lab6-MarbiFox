@@ -45,9 +45,10 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
   //crear Vector.
-  //int i, j, k;
   int * vec = (int *) calloc (10, sizeof(int));
-  int k, p;
+
+  int i, j, k, p;
+  
   for (k = 0; k < 9; k++) {
     vec = (int *) calloc (10, sizeof(int));
     for (p = 0; p < 9; p++) {
@@ -63,26 +64,21 @@ int is_valid(Node* n){
     }
   }
   
-  
-  
-  /*
   //Recorrer Filas y Columnas.
-  for (i = 0; i <= 9; i++) {
+  for (i = 0; i < 9; i++) {
     vec = (int *) calloc (10, sizeof(int));
-    for (j = 0; j <= 9; j++) {
-      printf("%d ", n->sudo[i][j]);
-      if (n->sudo[i][j] != 0){
-        k = n->sudo[i][j];
-        //Revisar si está en el arreglo
-        for (k = 0; k <= 9; k++) {
-          //printf("%d", n->sudo[i][j]);
-          if (vec[k-1] == 1) return 1;
-          vec[k-1] = 1;
-        }
+    for (j = 0; j < 9; j++) {
+      //Verificar si el número está en la subMatriz.
+      if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
+        vec[n->sudo[i][j]] = 1;
+      }
+      if (vec[n->sudo[i][j]] != 0) {
+        return 0;
       }
     }
-  }*/
-    return 1;
+  }
+  
+  return 1;
 }
 
 
