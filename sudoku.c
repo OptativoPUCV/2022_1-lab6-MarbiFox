@@ -119,11 +119,12 @@ Node* DFS(Node* initial, int* cont){
   Stack * S = createStack();
   push(S, initial);
   while (get_size(S) != 0) {
-    Node * initial = top(S); pop(S);
-    if (initial->visited == 1) continue;
+    Node * n = top(S); pop(S);
+    if (is_final(n)) return n;
+    if (n->visited == 1) continue;
     //Visitar Nodo.
-    initial->visited = 1;
-    List * adj = get_adj_nodes(initial);
+    n->visited = 1;
+    List * adj = get_adj_nodes(n);
     Node * aux = first(adj);
     while (aux) {
       push(S, aux);
