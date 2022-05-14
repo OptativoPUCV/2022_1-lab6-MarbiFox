@@ -47,8 +47,6 @@ int is_valid(Node* n){
   //crear Vector.
   //int i, j, k;
   
-  int * vec = (int *) calloc (10, sizeof(int));
-  
   int k, p;
   for (k = 0; k < 9; k++) {
     int * vec = (int *) calloc (10, sizeof(int));
