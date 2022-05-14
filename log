@@ -485,3 +485,14 @@ Sat May 14 03:01:29 UTC 2022:
  tests:  1|4
 total_score: 10/70
 52f8dfc
+Sat May 14 03:02:00 UTC 2022: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:50:9: error: unused variable ‘vec’ [-Werror=unused-variable]
+   int * vec = (int *) calloc (10, sizeof(int));
+         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+57780a7
