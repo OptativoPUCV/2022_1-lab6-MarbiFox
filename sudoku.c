@@ -55,12 +55,13 @@ int is_valid(Node* n){
       int i = 3 * (k/3) + (p/3);
       int j = 3 * (k%3) + (p%3);
       //Verificar si el número está en la subMatriz.
-      if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
-        vec[n->sudo[i][j]] = 1;
-      }
       if (vec[n->sudo[i][j]] != 0) {
         return 0;
       }
+      if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
+        vec[n->sudo[i][j]] = 1;
+      }
+      
     }
   }
   
@@ -70,24 +71,26 @@ int is_valid(Node* n){
     vec = (int *) calloc (10, sizeof(int));
     for (j = 0; j < 9; j++) {
       //Verificar si el número está en la subMatriz.
-      if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
-        vec[n->sudo[i][j]] = 1;
-      }
       if (vec[n->sudo[i][j]] != 0) {
         return 0;
       }
+      if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
+        vec[n->sudo[i][j]] = 1;
+      }
+      
     }
   }
   for (j = 0; j < 9; j++) {
     vec = (int *) calloc (10, sizeof(int));
     for (i = 0; i < 9; i++) {
       //Verificar si el número está en la subMatriz.
-      if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
-        vec[n->sudo[i][j]] = 1;
-      }
       if (vec[n->sudo[i][j]] != 0) {
         return 0;
       }
+      if (vec[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) {
+        vec[n->sudo[i][j]] = 1;
+      }
+      
     }
   }
   
