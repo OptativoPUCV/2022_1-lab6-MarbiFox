@@ -122,7 +122,7 @@ Node* DFS(Node* initial, int* cont){
     cont++;
     Node * n = top(S); pop(S);
     if (is_final(n)) return n;
-    if (n->visited == 1) continue;
+    //if (n->visited == 1) continue;
     //Visitar Nodo.
     n->visited = 1;
     List * adj = get_adj_nodes(n);
